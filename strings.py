@@ -90,3 +90,59 @@ print(newGreeting)
 newGreeting = greeting.split('i')
 print(newGreeting)
 #['hello world ', 't ', 's beaut', 'ful outs', 'de <3']
+
+
+# string interpolation
+# there are two methods for this
+#.format()method
+# f-strings(formatted string literals)
+
+# examples of using the format() method
+
+print('hello world, it is a {} day outside'.format("rainy"))
+# by using the curly braces and .format() at the end of the string, you will be able to insert data into the curly braces location
+
+# example 2
+
+print("the {} {} {}".format("fox", "brown", "quick"))
+
+# the fox brown quick
+
+# you can have more than one instance of curly brances and format data. It will be inserted by order by the way the arguments are listed in order in format.
+
+
+# example 3
+
+print("the {2} {1} {0}".format("fox", "brown", "quick"))
+
+# the quick brown fox
+
+# you can also tell the index location of where you want the data from format argument to be inserted into the curly braces correctly to create a string of your choosing.
+
+
+# example 4
+# you can declare variables in format arguments and use them instead of index numbers and create a string of your choosing
+
+print("the {q} {b} {f}".format(f="fox", b="brown", q="quick"))
+
+#the quick brown fox
+
+#using variables and indexes can be used for the format() method
+
+
+# float formatting follows "{value:width.precision f}"
+
+# value is the data and width is the white spaces that will be seperated from the main string text. Precision is the numbers that will show and truncate the rest of the data
+
+# example 1
+
+resultDivision = 100/777
+print(resultDivision)
+# result of division 0.1287001287001287
+
+print("the result was {r}".format(r=resultDivision))
+# the result was 0.1287001287001287
+
+print("the result was {r:1.7f}".format(r=resultDivision))
+
+#the result was 0.1287001
