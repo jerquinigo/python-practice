@@ -10,3 +10,4 @@ print(people_count)
 # type() is available to check to see what the current data type is
 print(type(people_count))
 # end of example
+
