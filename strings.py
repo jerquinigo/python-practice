@@ -132,7 +132,7 @@ print("the {q} {b} {f}".format(f="fox", b="brown", q="quick"))
 
 # float formatting follows "{value:width.precision f}"
 
-# value is the data and width is the white spaces that will be seperated from the main string text. Precision is the numbers that will show and truncate the rest of the data
+# value is the data and width is the white spaces that will be seperated from the main string text. Precision is the numbers that will show and truncate the rest of the data. need to follow precision with f
 
 # example 1
 
@@ -146,3 +146,15 @@ print("the result was {r}".format(r=resultDivision))
 print("the result was {r:1.7f}".format(r=resultDivision))
 
 #the result was 0.1287001
+
+
+
+# The second way is the string literal method. Same as string interpolation in JavaScript
+# this is known as the fstrings
+
+name = "Jonathan"
+print(f"hello, my name is {name}")
+#hello, my name is Jonathan
+
+# its similar to format() method. changing the syntax to use f in front of the string and put the variable into the curly braces
+
