@@ -73,3 +73,20 @@ print(newName, "after the concat")
 greeting = "hello world"
 greeting = greeting + " it is beautiful outside <3"
 print(greeting, "after the concat")
+
+# can also use a multiplication of letters
+sleeping = "z"
+sleeping = sleeping * 10
+print(sleeping, "goodnight")
+
+
+# the split method for a string creates a list for python
+
+newGreeting = greeting.split()
+print(newGreeting)
+#['hello', 'world', 'it', 'is', 'beautiful', 'outside', '<3']
+# the split method also takes in arguments. If blank, it will split on the white space. If a letter, it will split on the letter.
+
+newGreeting = greeting.split('i')
+print(newGreeting)
+#['hello world ', 't ', 's beaut', 'ful outs', 'de <3']
