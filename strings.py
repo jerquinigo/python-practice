@@ -28,3 +28,28 @@ print(myString[0:], "to print the entire word")
 
 #to print out to a certain length, you can set it either as myString[0:8] or myString[:8]
 print(myString[:7])
+
+# there is also a step size. It is the third parameter for the index values. having index[::] means that it will start from the beginning and will go to the end of the string. 
+# there is a third parameter. An example will be [::2]
+
+print(myString[::2], "jumping steps from two and starting and ending from the end of the string")
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print(alphabet[::2], "stepping by two")
+#acegikmoqsuwy stepping by two
+print(alphabet[::3], "stepping by three")
+#adgjmpsvy stepping by three
+
+# the index parameters will have a start, stop and a step size
+# [start:stop:step]
+
+#doing this with the arguments will reverse a string
+print(alphabet[::-1])
+# zyxwvutsrqponmlkjihgfedcba
+
+#can also do this to find an index of a string without variables
+# "hello world"[8]
+print("hello world"[8])
+
+# slicing strings
+print("tinker"[1:4], "will print out ink")
