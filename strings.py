@@ -53,3 +53,23 @@ print("hello world"[8])
 
 # slicing strings
 print("tinker"[1:4], "will print out ink")
+
+
+# Strings are immutable. Cannot change it my reassigning a value by index. Item assignment.
+
+# only way to have that functionality, you will have to create a new string with the value
+
+# String Concatenation
+
+name = "sam"
+newName = name[1:]
+newName = "P" + newName
+print(newName, "after the concat")
+
+# steps needed to create a new string and concat the values
+
+# example 2
+
+greeting = "hello world"
+greeting = greeting + " it is beautiful outside <3"
+print(greeting, "after the concat")
