@@ -53,3 +53,28 @@ print(myList, "my list after removing first element")
 #100 the first element removed
 #[2, 3, 4, 5, 6, 7, 8, 9] my list after removing first element
 
+# you can also use the reverse indexing as an argument for the pop(). example would be .pop(-1)
+
+newList = ['a','e','x','b','c']
+numList = [4,1,8,3]
+
+# using the sorted method, you do not have to store it to a variable, because it does not return anything. It is something it does in place. Just run the method then print out the list again and it will be sorted.
+
+newList.sort()
+numList.sort()
+print(newList, "sorted list after sort method has been run")
+print(numList, "sorted list after sort method has been run")
+
+#['a', 'b', 'c', 'e', 'x'] sorted list after sort method has been run
+#[1, 3, 4, 8] sorted list after sort method has been run
+
+
+# None is a null value just like null is to js. 
+#None is a return value of a function that does not return anything. It is used for search functions that may or may not return anything.
+#print(None)
+
+#reverse method does not return anything either. Can be run one line above and then print out the list values
+
+numList.reverse()
+print(numList, "reverse method has reversed the values")
+# [8, 4, 3, 1] reverse method has reversed the values
