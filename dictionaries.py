@@ -49,3 +49,5 @@ print(dict3.values(), "the values for dict3")
 # another method is .items() This allows to show its key value pair in a tuple form
 print(dict3.items(), "item method results")
 # ([('list1', ['apple', 'pear', 'peach']), ('list2', 'groceries for the week')], 'item method results')
+
+# the keys for dictionaries should be strings.
