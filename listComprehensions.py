@@ -76,3 +76,8 @@ ylist2 = [x*y for x in [2,4,6] for y in [100,200,300]]
 
 print(ylist2, "list comprehension way")
 #[200, 400, 600, 400, 800, 1200, 600, 1200, 1800] list comprehension way
+
+
+# note you can print out what a method can do using the help() function
+list99 = [1,2,3]
+print(help(list99.insert))

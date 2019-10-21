@@ -168,4 +168,3 @@ print(f"your input is {userInput1}")
 print(type(userInput1), "user input will be a string")
 
 # to change the user input from a string to a number, you can use two types of methods. float() or int()
-
