@@ -132,3 +132,40 @@ print("key1" in d1.keys())
 # True
 print("jonathan" in d1.values())
 # True
+
+# python also has a min and max value built in functions
+
+xlist = [10,20,30,40,50,100,400,1000,5000,4,5,2]
+print(min(xlist), "the min number in list")
+print(max(xlist), "the max number in list")
+
+#2 the min number in list
+#5000 the max number in list
+
+# you can also import functions from a library in python
+# example is going to use the random function
+
+from random import shuffle
+xlist2 = [1,2,3,4,5,6,7,8,9,10]
+shuffle(xlist2)
+# shuffle is not going to return anything. It is an in place function. It will modify the list itself
+print(xlist2, "the new list")
+
+
+# another import function, randint
+
+
+from random import randint
+# randint arguments take a lower number and a higher number and randomly gives back a number from that range
+print(randint(1,100))
+#65
+
+# to accept user input, we use the input function.
+# then you can save it to a variable
+userInput1 = input("enter a number here ")
+print(f"your input is {userInput1}")
+
+print(type(userInput1), "user input will be a string")
+
+# to change the user input from a string to a number, you can use two types of methods. float() or int()
+
