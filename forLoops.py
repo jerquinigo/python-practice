@@ -90,3 +90,33 @@ for a,b,c in myList4:
 
 
 # you can also use for loops to interate through a dictionary.
+
+nameDict = {"name1": "tom", "name2": "nathalie", "name3": "jonathan"}
+
+for item in nameDict:
+    print(item, "this will print out the key in the dictionary")
+#name1 this will print out the key in the dictionary
+#name2 this will print out the key in the dictionary
+#name3 this will print out the key in the dictionary
+
+# print out the values from the dictonary, you can do this
+
+for item in nameDict.items():
+    print(item, "will print out the key and value pairs")
+#('name1', 'tom')
+#('name2', 'nathalie')
+#('name3', 'jonathan')
+
+
+# to print out either the key or value in a dictionary
+for key,value in nameDict.items():
+    print(key, "the key in a dictionary")
+    print(value, "the value in a dictionary")
+#name1 the key in a dictionary
+#tom the value in a dictionary
+#name2 the key in a dictionary
+#nathalie the value in a dictionary
+#name3 the key in a dictionary
+#jonathan the value in a dictionary
+
+
