@@ -39,3 +39,14 @@ wildcard_looping_kwargs1(fruit="apple", veggie="lettuce")
 
 #{'fruit': 'apple', 'veggie': 'lettuce'} the dictionary created using **kwargs
 #my fruit of choice is fruit
+
+# the use of two wildcard stars is what makes it a dictionary
+# one star makes the arguments come out as a tuple
+
+# you can combine them both in a function
+
+def wilcard_combination_argument(*args,**kwargs):
+    print("I would like {} {}".format(args[0], kwargs['food']))
+
+wilcard_combination_argument(10,20,30,fruit="orange", food="eggs", animal="dog")
+
