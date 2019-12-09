@@ -32,7 +32,7 @@
 # print(person1.person)
 
 
-
+# example to understand self more
 # class People():
 #     # Attributes
 #     # we take in the argument
@@ -43,3 +43,16 @@
 
 # person1 = People("jonathan")
 # print(person1.my_attribute)
+
+
+# an example with many attributes 
+
+# class People():
+#   def __init__(self, personName,age):
+#     self.personName = personName
+#     self.age = age
+
+
+# person1 = People("jonathan", 28)
+# print(person1.personName)
+# print(person1.age)
