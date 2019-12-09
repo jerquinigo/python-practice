@@ -49,4 +49,5 @@ def wilcard_combination_argument(*args,**kwargs):
     print("I would like {} {}".format(args[0], kwargs['food']))
 
 wilcard_combination_argument(10,20,30,fruit="orange", food="eggs", animal="dog")
+#I would like 10 eggs
 
