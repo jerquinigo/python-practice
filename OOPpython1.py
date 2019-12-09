@@ -56,3 +56,23 @@
 # person1 = People("jonathan", 28)
 # print(person1.personName)
 # print(person1.age)
+
+
+## class object attributes and methods
+
+
+# using class object attributes and methods 
+# class People():
+#   # CLASS OBJECT ATTRIBUTE will always have to be true for the instance of the class
+#   speciesType = "human"
+
+#   def __init__(self, personName,age):
+#     self.personName = personName
+#     self.age = age
+
+#   def gretting(self):
+#     print("hello, my name is {}".format(self.personName))
+
+# person1 = People("jonathan", 28)
+# print(person1.speciesType)
+# person1.gretting()
