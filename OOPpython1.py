@@ -76,3 +76,67 @@
 # person1 = People("jonathan", 28)
 # print(person1.speciesType)
 # person1.gretting()
+
+class Circle():
+    # class object attribute is something that always true with an instance of the class
+    pi = 3.14
+
+    def __init__(self,radius=1):
+        self.radius = radius
+        # you can reference class object attribute cause it will always be the same in the class. you can reference it by Classname.variable example below
+        self.area = radius * radius * Circle.pi
+    
+    def get_circumference(self):
+        return self.radius * Circle.pi * 2
+
+my_circle = Circle()
+# can also do my_circle = Circle(30)
+print(my_circle.get_circumference())
+# prints out 6.28
+print(my_circle.pi)
+#prints out 3.14
+print(my_circle.area, "the area")
+# with the default values, it is 3.14. If it had 30 as radius, it comes out to 2826
+
+# you can have a default value in the class and overwrite it when creating an instance of it and pass the arguments in the parenthesis.
+
+
+
+### Inheritance and polymorphism
+
+#Inheritance is defining new classes with classes that has already been defined
+# first we create the base class
+
+class Animal():
+
+    def __init__(self):
+        print("Animal created")
+
+    def who_am_i(self):
+        print("I am an animal")
+
+    def eat(self):
+        print("I am eating")
+
+myAnimal = Animal()
+print(myAnimal.eat())
+print(myAnimal.who_am_i())
+
+#we create a new class and it will be inheriting the base class
+#passing in the class animal will inherit the base class for this new class
+class Dog(Animal):
+    def __init__(self):
+        Animal.__init__(self)
+        print("dog created")
+        #^this will create an instance of Animal class when Dog class instance is created
+
+        # you can overwrite methods from the parent class in the extended class. You will have to call it the same method name and then write what you want the new function to do
+    def who_am_i(self):
+        print("i am a dog")
+
+myDog = Dog()
+# we know have access to methods from Animal class into the Dog class. Using eat from Animals
+print(myDog.eat())
+#prints out I am eating
+print(myDog.who_am_i())
+# prints out i am a dog
